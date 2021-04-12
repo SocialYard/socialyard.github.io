@@ -1,0 +1,132 @@
+*{  color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+body{
+    background-color: #59048a;
+    overflow-x: hidden;
+}
+.nav{
+    /* position: absolute;
+    top: 0%;
+    left: 0%; */
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-decoration: none;
+    
+}
+.logoText{
+    padding: 20px;
+    font-size: 2vw;
+    font-weight: 900;
+    text-align: center;
+}
+.nav>li{
+    padding: 20px;
+    /* border: 1px solid; */
+    text-align: center;
+    font-weight: 900;
+    font-size: large;
+    list-style: none;
+}
+.nav>li>a{
+    text-decoration: none;
+}
+.main_section{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+.main_heading{
+    overflow: hidden;
+}
+.main_heading >h1{
+    font-size: 7vw;
+    position: absolute;
+    top: 30vh;
+    font-weight: 1;
+}
+.main_heading > p{
+    font-size: 2vw;
+    position: absolute;
+    top: 30vh;
+}
+.main_img > img{
+    width: 100%;
+    align-items: center;
+}
+.main_section>video{
+    padding-left: 0px;
+    margin: 0px;
+    z-index: -2;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+}
+/* ABOUT CSS */
+.about{
+    display: grid;
+    overflow: hidden;
+}
+#about> div>img{
+    width: 50vw;
+}
+.about_right{
+    align-items: center;
+    height: fit-content;
+    margin: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+}
+.about_right_body{
+    text-align: justify;
+}
+#about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* SERVICES CSS */
+.services_container{
+    display: grid;
+    grid-gap: 0.5vw;
+    overflow: hidden;
+    padding: 0 50px 50px 50px;
+}
+
+.services_head>h1{
+text-align: left;
+font-size: 60px;
+height: fit-content;
+/* border: 1px solid; */
+padding-left: 0px;
+}
+.service> h4{
+    font-size:3vw ;
+    color: #59048a;
+}
+.services_head{
+    grid-column: 1/5;
+    padding-left: 0px;
+}
+.sone{
+    grid-column: 1/3;
+}
+.stwo{
+    grid-column: 3/5;
+}
+.sthree{
+    grid-column: 1/5;
+}
+.service{
+    background-color: #ddd;
+    font-size: 50px;
+    text-align: center;
+}
