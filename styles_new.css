@@ -8,12 +8,11 @@ body{
     overflow-x: hidden;
 }
 .nav{
-    /* position: absolute;
-    top: 0%;
-    left: 0%; */
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
     text-decoration: none;
+    position: sticky;
+    top: 0;
     
 }
 .logoText{
