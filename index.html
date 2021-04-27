@@ -4,86 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Yard</title>
+    <title>SocialYard</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles_new.css">
+        }
+        .body{
 
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    
+        }
+        h1{
+            font-size: 3em;
+            padding: 20px;
+        }
+        h2{
+            padding: 20px;
+            font-size: 2em;
+        }
+        p{
+            padding: 20px;
+            font-size: 1em;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .container{
+            text-align: center;
+            padding: 50px;
+            z-index: 996;
+        }
+        head{
+            margin: auto;
+        }
+
+        section{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: #3586ff;
+            overflow: hidden;
+        }
+
+        section .wave{
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            width: 100%;
+            height: 100px;
+            background: url(assets/images/wave.png);
+            background-size: 1000px 100px;
+        }
+
+        section .wave.wave1{
+            animation: animate 30s linear infinite;     
+            z-index: 1000;
+            opacity: 1;
+            animation-delay: 0s;
+            bottom: 0;   
+        }
+
+        section .wave.wave2{
+            animation: animate2 15s linear infinite;     
+            z-index: 999;
+            opacity: 0.5;
+            animation-delay: -5s;
+            bottom: 10px;   
+        }
+
+        section .wave.wave3{
+            animation: animate 15s linear infinite;     
+            z-index: 998;
+            opacity: 0.2;
+            animation-delay: -2s;
+            bottom: 15px;   
+        }
+
+        section .wave.wave4{
+            animation: animate2 5s linear infinite;     
+            z-index: 997;
+            opacity: 0.7;
+            animation-delay: -5s;
+            bottom: 20px;   
+        }
+
+        @keyframes animate
+        {
+            0%
+            {
+                background-position-x: 0;
+            }
+            100%{
+                background-position-x: 1000px ;
+            }
+        }
+
+        @keyframes animate2
+        {
+            0%
+            {
+                background-position-x: 0;
+            }
+            100%{
+                background-position-x: 1000px ;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- NAVIGATION BAR START -->
-    <div id="home" class="nav">
-        <div class="logoText">Social Yard</div>
-        <div class="gap"></div>
-        <li class="nav_buttons"><a href="#home">Home</a></li>
-        <li class="nav_buttons"><a href="#about">About us</a></li>
-        <li class="nav_buttons"><a href="#services">Services</a></li>
-        <li class="nav_buttons"><a href="#portfolio">Portfolio</a></li>
-        <li class="nav_buttons"><a href="#contact">Contact us</a></li>
-    </div>
-    <!-- NAVIGATION BAR END -->
+    <section>
+        <div class="container">
 
-    <!-- MAIN SECTION START -->
-    <div class="main_section">
-        <video loop autoplay muted src="assets/videos/main_video.mp4"></video>
-        <div class="main_heading">
-            <h1>Social Yard</h1>
-            <p>Reshaping the Web</p>
-            <!-- <button class="rd_btn">Know More</button> -->
-        </div>
-
-        <div class="main_img">
-            <img src="assets/images/main_image.png" alt="main_image">
-        </div>
-    </div>
-    <!-- MAIN SECTION END -->
-
-    <!-- ABOUT SECTION START -->
-    <div id="about">
-        <div class="about_left">
-            <img src="assets/images/about_image.png" alt="">
-        </div>
-    
-        <div class="about_right">
-            <div class="about_right_head">
-                <h1>About us</h1>
-            </div>
-        
-            <div class="about_right_body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cum enim nulla totam harum quasi explicabo alias autem laboriosam tempora maiores nisi repellendus reprehenderit aliquam architecto? Totam aut sit ab provident voluptas dignissimos iusto delectus fugiat, nam, veritatis quaerat dolore magnam, numquam quas minus fugit rem dolorem adipisci ea molestias.</p>
+            <div class="head">
+                <h1>Our Website is being Updated!</h1>
+                <h2>Sorry for the inconvenience.</h2>
+                <p>Meanwhile, you can contact us at +91 8891983480 or mail us at <a href="mailto:thesocialyard2020@gmail.com">thesocialyard2020@gmail.com</a></p>
             </div>
 
         </div>
-    </div>
-    <!-- ABOUT SECTION END -->
-
-    <!-- SERVICE SECTION START -->
-    <div id="services">
-        <div class="services_container">
-            <div class="services_head">
-                <h1>Our Services</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ad illum dolore quasi expedita alias iure harum atque itaque deleniti rem, cumque ratione vero aut?</p>
-            </div>
-            <div class="service sone">
-                <h4>Website Designing and Development</h4>
-            </div>
-
-            <div class="service stwo">
-                <h4>Logo Designing</h4>
-            </div>
-
-            <div class="service sthree">
-                <h4>Video editing</h4>
-            </div>
-
-        </div>
-    </div>
-    <!-- SERVICE SECTION END -->
-
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </section>
 
 </body>
 </html>

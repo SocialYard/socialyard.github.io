@@ -1,0 +1,16 @@
+#sub > h1{
+    color: red;
+}
+#sub{
+    background-color: royalblue;
+}
+#navbar>ul{
+    display: grid;
+    grid-template-columns:3fr 1fr 1fr 1fr 1fr 1fr
+}
+#navbar>ul>li{
+    list-style: none;
+}
+#navbar>ul>li>a{
+    text-decoration: none;
+}
